@@ -131,3 +131,102 @@ h1, p {
     display: flex;
     justify-self: center;
 }
+.products-heading {
+    text-align: center;
+    padding: 50px;
+    font-weight: bold;
+    font-size: 3rem;
+}
+.container {
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+}
+.containers {
+    background: linear-gradient(
+    135deg, 
+    rgba(15, 23, 42, 1) 0%,     /* Deep charcoal black */
+    rgba(51, 65, 85, 1) 100%    /* Cool slate grey */
+    );
+    max-width: 200px;
+    width: 100%;
+    min-height: 20px;
+
+    text-align: center;
+    padding: 40px;
+    margin: 10px;
+
+    border: 1px solid black;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+.containers > p {
+    color: white;
+}
+.container2 {
+    background: linear-gradient(
+    135deg, 
+    rgba(147, 51, 234, 1) 0%,   /* Bright, vibrant violet */
+    rgba(107, 33, 168, 1) 50%,  /* Deep royal purple */
+    rgba(88, 28, 135, 1) 100%   /* Rich plum purple */
+    );
+    border: none;
+    color: white;
+}
+.container2 > p {
+    color: aliceblue;
+}
+.container3 {
+    background: linear-gradient(
+    135deg, 
+    rgba(109, 40, 217, 1) 0%,   /* Rich, vibrant violet */
+    rgba(75, 85, 99, 1) 60%,    /* Slate grey transition blend */
+    rgba(31, 41, 55, 1) 100%    /* Deep charcoal grey */
+    );
+    border: none;
+    color: white;
+}
+.container3 > p {
+    color: white;
+}
+.login-form-main {
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+}
+.login-form-container {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.login-form-container > input {
+    margin: 10px;
+    width: 300px;
+    height: 40px;
+    border: none;
+    border-radius: 30px;
+    background: rgba(243, 244, 246, 1);
+}
+input::placeholder {
+    color: grey;
+    font-size: 16px;
+    /* font-style: italic; */
+    padding: 10px;
+}
+input[type="text"], input[type="password"], textarea {
+    color: #1f2937;
+    font-size: 18px;
+    font-family: sans-serif;
+    font-weight: normal;
+    padding: 10px;
+}
