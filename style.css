@@ -1,0 +1,133 @@
+/* define variables */
+:root {
+    --primary-color: #FFFEFA
+}
+* {
+    margin: 0;
+    padding: 0;
+}
+html {
+    font-family: Poppins, sans-serif;
+}
+body {
+    background-color: var(--primary-color);
+}
+h1 {
+    font-weight: bold;
+    margin-bottom: 15px;
+    line-height: 1.2;
+}
+p {
+    color: grey;
+    margin-bottom: 30px;
+    line-height: 1.6;
+}
+.menu ul {
+    display: flex; /* make the ul items inline block */
+    justify-content: center; /* drag the items in center */
+    list-style: none; /* remove the bullet points */
+    padding: 0;
+    margin: 0;
+}
+.menu li a {
+    display: block; /* makes the whole are clickable */
+    padding: 15px 20px;
+    text-decoration: none;
+    color: #000000;
+    opacity: 0.5;
+    font-weight: normal;
+    transition: opacity 0.3s;
+}
+.menu li a.active {
+    opacity: 1;
+    font-weight: bold;
+    /* border-bottom: 2px solid #000; */
+}
+.menu li a:hover {
+    opacity: 1;
+    border-bottom: 2px solid lightgreen;
+}
+.main {
+    padding: 100px;
+    display: flex; /* Activates Flexbox layout */
+    flex-direction: column; /* Stacks elements vertically (top to bottom) */
+    justify-content: center; /* Centers elements vertically */
+    align-items: center; /* Centers elements horizontally */
+    text-align: center; /* Ensures text inside elements is also centered */
+    font-size: 1.2rem;
+}
+h1, p {
+    max-width: 500px;
+    width: 100%;
+}
+.main-button {
+    text-transform: uppercase;
+    padding: 12px 24px;
+    font-weight: bold;
+
+    cursor: pointer;
+    letter-spacing: 1px;
+    border: none;
+    border-radius: 30px;
+    background: linear-gradient(
+    135deg, 
+    rgba(147, 51, 234, 1) 0%,   /* Bright, vibrant violet */
+    rgba(107, 33, 168, 1) 50%,  /* Deep royal purple */
+    rgba(88, 28, 135, 1) 100%   /* Rich plum purple */
+    );
+
+    color: white; /* Makes your text readable over the darker purple colors */
+    padding: 20px 30px;
+    transition: transform 0.2s ease-in-out;
+}
+.main-button:hover {
+    transform: scale(1.06);
+}
+.main-button a {
+    text-decoration: none;
+    color: white;
+    font-size: 0.8rem;
+}
+
+.video-container {
+    position: relative;
+    width: 100%;
+    max-width: 800px;
+    aspect-ratio: 16 / 9;
+    margin: 40px auto;
+
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3), 
+              0 0 20px rgba(147, 51, 234, 0.2);
+}
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+.video-meta {
+    text-align: center;
+    max-width: 800px;
+    margin: 20px auto 0 auto;
+    padding: 0 15px;
+}
+.video-meta h2 {
+    color: #000;
+    font-size: 1.5rem;
+    margin-bottom: 8px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+.video-meta .video-title {
+    color: rgb(60, 53, 38);
+    font-size: 1.1rem;
+    line-height: 1.4;
+    margin: 0;
+    text-align: center;
+    display: flex;
+    justify-self: center;
+}
