@@ -229,4 +229,5 @@ input[type="text"], input[type="password"], textarea {
     font-family: sans-serif;
     font-weight: normal;
     padding: 10px;
+    /* align-items: center; */
 }
